@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6em;
+    background: #f2f2f2; 
+}
+
+a{
+    color:#666;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+header {
+background: #333;
+min-height: 55px;
+color: #fff
+}
+
+header a {
+    color: #fff
+}
+
+nav {
+    float: right;
+    width: 70%
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    padding: 0 10px;
+    font: Roboto, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+nav li.current a, nav a:hover {
+    color:#b3b3ff;
+    border-bottom: #b3b3ff 3px solid
+}
+
+section {
+    padding:20px 0;
+    overflow: hidden;
+}
+
+.tagline {
+    background: #99ccff;
+    color: #fff;
+}
+
+.tagline h1 {
+    text-align: center;
+    font-size: 35px;
+    font: Roboto, sans-serif;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+#gallery {
+    list-style: none;
+    margin-left: 35px ;
+    padding: 0;
+    width: 100%
+}
+
+#gallery li {
+    display: block;
+    float: left;
+    width:23%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 12px 7px 0;
+    position: relative;
+}
+
+#gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer{
+    background: #99ccff;
+    height: 55px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.overlay {
+display: none;
+background: #99ccff;
+color: #fff;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100%;
+height: 100%;
+padding: 20px;
+border-radius: 5px;
+box-sizing: border-box;
+pointer-events: none;
+}
+
+.overlay h3 {
+    margin-top: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+.overlay p {
+    margin-top: none;
+    padding: none;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    nav{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul, nav li {
+        float: none;
+        padding: 0;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+    }
+
+    #gallery li{
+        width: 48%;
+        margin-right: 8px;
+    }
+}
+
+@media(max-width: 568px) {
+    #gallery li {
+        width: 100%;
+        margin-right: 0;
+    }
+}
